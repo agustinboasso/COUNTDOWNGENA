@@ -9,8 +9,7 @@ function App() {
   useEffect(() => {
     const calculateTimeLeft = () => {
       // Fecha del cumpleaños: 20 de diciembre de 2025 a las 00:00:00
-      // MODO TEST: Cambiada a fecha pasada para ver la celebración
-      const birthdayDate = new Date('2024-12-13T00:00:00');
+      const birthdayDate = new Date('2025-12-20T00:00:00');
       const now = new Date();
       const difference = birthdayDate - now;
 
