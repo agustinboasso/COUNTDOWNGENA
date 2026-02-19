@@ -276,3 +276,5 @@ He simplificado el diseño siguiendo tu feedback:
 
 El resultado es **limpio, simple y efectivo** - exactamente lo que pediste. Los studs ahora están donde deben estar: en el fondo como patrón decorativo, no distrayendo del countdown principal. 🧱✨
 
+
+

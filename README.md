@@ -1,10 +1,14 @@
-# 🎂 Cumpleaños de Genaro - ¡8 Años! 🎉
+# 🎂 Cumpleaños Familiares 🎉
 
-Una hermosa página de countdown con estética LEGO para el cumpleaños número 8 de Genaro el 20 de diciembre de 2025.
+Una hermosa página de countdown con estética LEGO para toda la familia. Muestra el próximo cumpleaños destacado y todos los demás cumpleaños en tarjetas interactivas.
 
 ## 🎨 Características
 
-- ⏰ **Countdown en tiempo real** - Muestra días, horas, minutos y segundos hasta el cumpleaños
+- 👨‍👩‍👧‍👦 **Sistema Familiar** - Gestiona los cumpleaños de toda la familia (Mamá, Papá, Bruno, Gena)
+- 🎯 **Próximo Cumpleaños Destacado** - El cumpleaños más cercano se muestra en grande con badge dorado
+- 🎴 **Tarjetas Interactivas** - Los otros cumpleaños aparecen en tarjetas LEGO 3D con hover effects
+- 🔢 **Edades Automáticas** - Calcula automáticamente la edad basándose en el año de nacimiento
+- ⏰ **Countdown en tiempo real** - Muestra días, horas, minutos y segundos hasta el próximo cumpleaños
 - 🧱 **DISEÑO LEGO LIMPIO Y MODERNO** - Bloques simples con identidad LEGO:
   - 🎨 **Fondo con patrón LEGO** - Bloques dispersos animados en el fondo
   - 🧱 **Bloques simples 3D** - Sin studs, enfoque en el countdown
@@ -96,11 +100,23 @@ El sitio está **completamente optimizado** para todos los dispositivos:
 
 ## 📝 Personalización
 
-Si quieres cambiar la fecha del cumpleaños, edita el archivo `src/App.jsx` en la línea donde se define `birthdayDate`:
+Para personalizar los miembros de tu familia, edita el array `familyMembers` en `src/App.jsx`:
 
 ```javascript
-const birthdayDate = new Date('2025-12-20T00:00:00');
+const familyMembers = [
+  { name: 'Mamá', date: '10-30', emoji: '👩', color: 'red', birthYear: 1988 },
+  { name: 'Papá', date: '07-13', emoji: '👨', color: 'blue', birthYear: 1988 },
+  { name: 'Bruno', date: '08-15', emoji: '👦', color: 'yellow', birthYear: 2012 },
+  { name: 'Gena', date: '12-20', emoji: '🎂', color: 'green', birthYear: 2016 }
+];
 ```
+
+**Parámetros:**
+- `name`: Nombre de la persona
+- `date`: Fecha del cumpleaños en formato `'MM-DD'`
+- `emoji`: Emoji representativo
+- `color`: Color del bloque LEGO (`'red'`, `'yellow'`, `'blue'`, `'green'`)
+- `birthYear`: Año de nacimiento (las edades se calculan automáticamente)
 
 ## 🎉 Características Especiales
 
@@ -109,6 +125,16 @@ const birthdayDate = new Date('2025-12-20T00:00:00');
 - **Interactivo** - Los bloques LEGO responden al hover
 - **Celebración automática** - Se activa automáticamente cuando llega el día
 
-## ❤️ Hecho con amor para Genaro
+## ❤️ Hecho con amor para toda la familia
 
-¡Que tengas un cumpleaños increíble! 🎈🎁🎊
+¡Celebremos juntos cada cumpleaños! 🎈🎁🎊
+
+### Sistema de Edades Automático 🔢
+
+Las edades se calculan automáticamente según el año actual y el año de nacimiento:
+- **Mamá**: 36 años (cumple 37 en octubre)
+- **Papá**: 36 años (cumple 37 en julio)
+- **Bruno**: 12 años (cumple 13 en agosto)
+- **Gena**: 8 años (cumple 9 en diciembre)
+
+El sistema siempre mostrará la edad correcta que cada persona cumplirá en su próximo cumpleaños.

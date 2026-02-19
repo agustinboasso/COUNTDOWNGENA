@@ -424,3 +424,5 @@ Si quieres llevar la identidad LEGO aún más lejos, podríamos agregar:
 
 Cada detalle está pensado para que Genaro sienta que está en el mundo LEGO cuando visite su página de cumpleaños.
 
+
+
